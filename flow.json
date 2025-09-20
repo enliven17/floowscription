@@ -1,0 +1,32 @@
+{
+  "contracts": {
+    "SubscriptionManager": "./contracts/SubscriptionManager.cdc"
+  },
+  "networks": {
+    "emulator": "127.0.0.1:3569",
+    "testnet": "access.devnet.nodes.onflow.org:9000",
+    "mainnet": "access.mainnet.nodes.onflow.org:9000"
+  },
+  "accounts": {
+    "emulator-account": {
+      "address": "f8d6e0586b0a20c7",
+      "key": "your-private-key-here"
+    },
+    "testnet-account": {
+      "address": "0x...",
+      "key": "your-testnet-private-key"
+    }
+  },
+  "deployments": {
+    "emulator": {
+      "emulator-account": [
+        "SubscriptionManager"
+      ]
+    },
+    "testnet": {
+      "testnet-account": [
+        "SubscriptionManager"
+      ]
+    }
+  }
+}
